@@ -1,0 +1,11 @@
+#mensajeDespedida {
+  display: none;
+  color: red;
+}
+
+#descripcion {
+  display: block;
+  width: 300px;
+  min-height: 100px;
+}
+/*# sourceMappingURL=estilos.css.map */

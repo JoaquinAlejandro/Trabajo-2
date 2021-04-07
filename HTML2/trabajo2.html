@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <h1 id = "titulo">Formulario</h1>
+        <form id="formulario" method="POST">
+            <ul>
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="string" id="nombre" maxlenght="20" required>
+                </li>
+                <li>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="string" id="apellidos" maxlenght="20" required>
+                </li>
+                <li>
+                    <label for="rut">Rut</label>
+                    <input type="string" id="rut" maxlenght="8" required>
+                </li>
+                <li>
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" id="correo" maxlenght="20" required>
+                </li>
+                <li>
+                    <label for="telefono">Telefono Movil</label>
+                    <input type="number" id="telefono" onKeyPress="if(this.value.length==9) return false;" required>
+                </li>
+                <li>
+                    <label for="checklist">Selecciona 1 o mas lenguajes de programacion de su interes:</label>
+                    <br>
+                    <input type="checkbox" id="checklist" >Python
+                    <br>
+                    <input type="checkbox" id="checklist" >Java
+                    <br>
+                    <input type="checkbox" id="checklist" >TypeScript
+                    <br>
+                    <input type="checkbox" id="checklist" >PHP
+                    <br>
+                    <input type="checkbox" id="checklist" >C#
+                    <br>
+                    <input type="checkbox" id="checklist" >C++
+                </li>
+                <li>
+                    <label for="rango">¿Cual es su nivel de conocimiento en programacion?</label>
+                    <br>
+                    <input type="range" id="rango" required>
+                </li>
+                <li>
+                    <label for="expLaboral">¿Cuantos años de experiencia laboral tiene?</label>
+                    <br>
+                    <input type="radio" id="expLaboral1" required>1.
+                    <input type="radio" id="expLaboral2" >2.
+                    <input type="radio" id="expLaboral3" >3.
+                    <input type="radio" id="expLaboral4" >4.
+                    <input type="radio" id="expLaboral5" >5.
+                </li>
+                <li>
+                    <label for="descripcion">Realize una breve descripcion de usted.</label>
+                    <input type="textarea" id="descripcion" maxlenght="300" required>
+                </li>
+                    <br>
+                    <button type="submit" id="enviar">Enviar datos</button>
+                    <button type="reset" id="limpiar">Limpiar datos</button>           
+            </ul>
+        </form>
+        <h1 id="mensajeDespedida">hemos recibido sus datos, pronto nos 
+            estaremos comunicando con usted</h1>
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>
